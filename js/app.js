@@ -79,7 +79,7 @@ function renderCircles(circlesGroup, newXScale, chosenXAxis, newYScale, chosenYA
 
     let color;
     if (chosenYAxis === "smokes"){
-        color = "light"
+        color = "black"
     } 
     else if (chosenYAxis === "healthcare"){
         color = "lightblue"
@@ -148,7 +148,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
 }
 
 // Retrieve data from the CSV file and execute everything below
-d3.csv("./assets/data/data.csv").then(function (csvData, err) {
+d3.csv("./data/data.csv").then(function (csvData, err) {
     if (err) throw err;
 
     // parse data
